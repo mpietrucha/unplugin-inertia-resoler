@@ -1,0 +1,24 @@
+{
+  "name": "unplugin-inertia-resolver",
+  "version": "1.0.0",
+  "description": "Unplugin inertia resolver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpietrucha/unplugin-inertia-resoler.git"
+  },
+  "keywords": [
+    "unplugin",
+    "inertia",
+    "resolver"
+  ],
+  "author": "Michał Pietrucha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpietrucha/unplugin-inertia-resoler/issues"
+  },
+  "homepage": "https://github.com/mpietrucha/unplugin-inertia-resoler#readme"
+}
