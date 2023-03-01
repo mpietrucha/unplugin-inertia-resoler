@@ -1,27 +1,17 @@
-const from = '@inertiajs/vue3'
+const process = (config, names) => name => {
+    const components = names.filter(name => ! config.except.includes(name))
 
-const components = (config = { except: [] }) => {
-    const components = ['Head', 'Link'].filter(component => ! config.except.includes(component))
-
-    return name => {
-        if (! components.includes(name)) {
-            return
-        }
-
-        return { name, from }
+    if (! components.includes(name)) {
+        return;
     }
+
+    return { name, from: '@inertiajs/vue3' }
 }
 
-const composables = (config = { except: [] }) => {
-    const composables = ['useForm'].filter(component => ! config.except.includes(component))
+const defaultConfig = { except: [] }
 
-    return name => {
-        if (! composables.includes(name)) {
-            return
-        }
+const components = (config = defaultConfig) => process(config, ['Head', 'Link'])
 
-        return { name, from }
-    }
-}
+const composables = (config = defaultConfig}) => process(config, ['useForm', 'router'])
 
 module.exports = { components, composables }
