@@ -12,6 +12,6 @@ const defaultConfig = { except: [] }
 
 const components = (config = defaultConfig) => process(config, ['Head', 'Link'])
 
-const composables = (config = defaultConfig}) => process(config, ['useForm', 'router'])
+const composables = (config = defaultConfig) => process(config, ['useForm', 'router'])
 
 module.exports = { components, composables }

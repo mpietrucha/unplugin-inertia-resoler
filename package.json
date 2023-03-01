@@ -1,6 +1,6 @@
 {
   "name": "unplugin-inertia-resolver",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Unplugin inertia resolver",
   "main": "index.js",
   "scripts": {
